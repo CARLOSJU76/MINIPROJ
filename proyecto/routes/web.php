@@ -13,3 +13,5 @@ Route::get('/bienvenida', [ProductoController::class, 'bienvenida']);
 Route::get('/bye', [ProductoController::class, 'bye']);
 Route::get('/producto', [ProductoController::class, 'viewProducto']);
 Route::get('/insertar', [ProductoController::class, 'viewInsertProd']);
+Route::post('/productos/insertar', [ProductoController::class, 'store'])->name('producto.insertproducto');
+
